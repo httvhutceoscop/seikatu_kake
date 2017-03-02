@@ -1,0 +1,84 @@
+textarea#textarea
+{
+	padding:0px;
+	margin:0px; 
+    outline: none;
+	width: 100%;
+	height: 100%; 
+	font-family:Arial; 
+	line-height: 100% !important;
+	background-color: white;
+	background: transparent;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	resize:none;
+	overflow:hidden;
+    background-repeat:no-repeat;
+	
+}
+div#draggable 
+{
+	padding: 0.5em; 
+	background-color: transparent; 
+	padding: 20px;
+	position: absolute; 
+}
+span#span
+{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border:0;
+	height: 100%;
+	width: 100%;
+}
+pre {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border:0;
+	height: 100%;
+	width: 100%;
+}
+.info {position: absolute;}
+.expandingArea {
+	position: relative;
+	height:100%;
+	width: 100%;
+
+}
+.expandingArea > textarea,
+.expandingArea > pre {
+	padding: 5px;
+	background: transparent;
+	word-wrap: break-word;
+}
+.expandingArea > textarea {
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	
+	height: 100px;
+}
+.expandingArea.active > textarea {
+	/* Hide any scrollbars */
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	resize: none;
+}
+.expandingArea > pre {
+	display: block;
+	display: none;
+}
+.expandingArea.active > pre {
+	display: block;
+	visibility: hidden;
+}
+.textarea{}
